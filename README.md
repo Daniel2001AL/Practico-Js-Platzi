@@ -11,3 +11,4 @@ Proyectos del curso práctico de JavaScript de Platzi
 
 ## Vistas de la applicación
 
+![Image text](https://github.com/Daniel2001AL/Practico-Js-Platzi/blob/main/imgs/Captura%20calculadora%20geometrica.png)
