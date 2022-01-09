@@ -1,0 +1,117 @@
+:root{
+    --white: #ffffff;
+    --headers: #ffb703;
+    --hospital-green: #023047;
+    --text-input-field: #8ecae6;
+    --very-light-pink: #fb8500;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+body{
+    margin: 0 0 16px 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+header{
+    background-color: var(--headers);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-content: center;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    border-end-end-radius: 32px;
+    border-end-start-radius: 32px;
+    }
+
+header h1{
+    font-weight: bold;
+    padding: 0 16px 0;
+}
+header img{
+    height: 50px;
+    width: 50px;
+}
+
+section{
+    text-align: center;
+    font-size: var(--lg);
+    margin: 28px 0 32px 0;
+}
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 80px;
+    place-content: center;
+}
+
+.title-card{
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    place-content: center;
+    width: 60%;
+}
+.title-card img{
+    height: 50px;
+    width: 50px;
+}
+.card{
+    border: 1px ridge var(--very-light-pink);
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    align-items: center;
+    padding: 8px;
+}
+.card p{
+    margin-bottom: 24px;
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.formCard div{
+ 
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.formCard div input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 20px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 8px;
+}
+
+.buttons{
+    margin-top: 32px;
+}
+.calculate{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    height: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    header{
+        font-size: 12px;
+        }
+
+    .container-cards{
+        gap: 40px;
+    }
+}

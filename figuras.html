@@ -4,11 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"/>
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <h1>Práctica Figuras Geométricas</h1>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/1151/1151214.png" alt="geometry-icon">
+        <h1>Calculadora de Área y Perímetro Básica</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/1151/1151214.png" alt="geometry-icon">
+    </header>
+    <section>
+        <p>Para calcular el perímetro y área de las figuras ingresa las medidas solicitadas</p>
+    </section>
 
-    <script src="figuras.js"></script>
+    <div class="container-cards">
+        <div class="card">
+            <div class="title-card">
+                <p>Cuadrado</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/5854/5854013.png" alt="cuadrado">   
+            </div>
+            <form class="formCard">
+                <div>
+                    <label for="ladoCuadrado" class="label">Lado</label>
+                    <input type="number" name="ladoCuadrado" id="ladoCuadrado">
+                </div>                
+            </form>
+            <div class="buttons">
+                <button type="button" class="calculate" onclick="calcularPerimetro('cuadrado')">Calcula perímetro</button>
+                <button type="button" class="calculate" onclick="calcularArea('cuadrado')">Calcula área</button>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="title-card">
+                <p>Triángulo</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/595/595008.png" alt="triangulo">   
+            </div>
+            <form class="formCard">
+                <div>
+                    <label for="ladoTriangulo1" class="label">Lado 1</label>
+                    <input type="number" name="ladoTriangulo1" id="ladoTriangulo1">
+                    <label for="ladoTriangulo2" class="label">Lado 2</label>
+                    <input type="number" name="ladoTriangulo2" id="ladoTriangulo2">
+                    <label for="base" class="label">Base</label>
+                    <input type="number" name="base" id="base">
+                    <label for="altura" class="label">Altura</label>
+                    <input type="number" name="altura" id="altura">
+                </div>
+            </form>
+            <div class="buttons">
+                <button type="button" class="calculate" onclick="calcularPerimetro('triangulo')">Calcula perímetro</button>
+                <button type="button" class="calculate" onclick="calcularArea('triangulo')">Calcula área</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title-card">
+                <p>Circulo</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/594/594580.png" alt="circulo">   
+            </div>
+            <form class="formCard">
+                <div>
+                    <label for="radio" class="label">Radio</label>
+                    <input type="number" name="radio" id="radio">
+                </div>                
+            </form>
+            <div class="buttons">
+                <button type="button" class="calculate" onclick="calcularPerimetro('circulo')">Calcula perímetro</button>
+                <button type="button" class="calculate" onclick="calcularArea('circulo')">Calcula área</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./figuras.js"></script>
 </body>
 </html>
