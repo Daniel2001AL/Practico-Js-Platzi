@@ -44,7 +44,15 @@ section{
     gap: 80px;
     place-content: center;
 }
-
+.card{
+    border: 1px ridge var(--very-light-pink);
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    align-items: center;
+    padding: 8px;
+}
 .title-card{
     margin-top: 8px;
     display: grid;
@@ -55,15 +63,6 @@ section{
 .title-card img{
     height: 50px;
     width: 50px;
-}
-.card{
-    border: 1px ridge var(--very-light-pink);
-    border-radius: 12px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    justify-items: center;
-    align-items: center;
-    padding: 8px;
 }
 .card p{
     margin-bottom: 24px;

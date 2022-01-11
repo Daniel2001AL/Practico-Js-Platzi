@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="descuento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"/>
+    <title>Descuentos App</title>
+</head>
+<header>
+    <h1>Calculadora de Descuentos</h1>
+</header>
+<section class="container">
+    <div class="info">
+        <img src="https://cdn-icons.flaticon.com/png/512/5205/premium/5205654.png?token=exp=1641874520~hmac=6bb93e0274eb127595cfd9bca7a9c824" alt="operadores matemáticos">
+        <div class="textos">
+            <h1>Calculadora de Descuentos</h1>
+            <p>Aqui puedes calcular tus descuentos introduciendo el precio y la cantidad a descontar y obtendras el precio final</p>
+        </div>
+    </div> 
+    <div class="card">
+        <div class="title-card">
+            <p>Introduce los Datos</p>
+            <img src="https://cdn-icons.flaticon.com/png/512/4748/premium/4748455.png?token=exp=1641876973~hmac=d28fdaebb733daf6dd8b343f2bcff417" alt="logo">   
+        </div>
+        <form class="formCard">
+            <div>
+                <label for="precioOriginal" class="label">Precio Original</label>
+                <input type="number" name="precioOriginal" id="precioOriginal" onkeyup="calcularDescuento()">
+                <label for="descuento" class="label">Descuento (%)</label>
+                <input type="number" name="descuento" id="descuento"  onkeyup="calcularDescuento()">
+            </div>
+            <p>Tu descuento es</p>
+            <p id="resultado"></p>
+        </form>
+    </div>   
+</section>
+<body>
+    <script src="./descuento.js"></script>
+</body>
+</html>
